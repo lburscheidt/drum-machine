@@ -1,9 +1,10 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import Drum from "./Drum.jsx";
 
-createRoot(document.querySelector("body")).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
 	<StrictMode>
 		<Drum />
 	</StrictMode>,
