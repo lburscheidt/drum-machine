@@ -1,0 +1,36 @@
+#root {
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+#drum-machine {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 30%;
+	width: 50%;
+	border: 2px solid gold;
+}
+
+#drum-pads {
+	margin: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+.drum-pad {
+	height: 50px;
+	width: 50px;
+}
